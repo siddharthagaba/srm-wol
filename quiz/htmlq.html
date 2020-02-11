@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="htmlq.css">
+</head>
+<body>
+    <header>
+      <div class="contain">
+        <div class="header-left">
+          <img class="logo" src="../data/logo.png">
+        </div>
+
+  
+        <div class="header-right">
+          <a href="../index.html">Home</a>
+        </div>
+      </div>
+    </header>
+    <div id="container">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <footer>
+      <div class="container">
+        <img src="../data/logo.png">
+        <p>Tickle your neurons!</p>
+      </div>
+    </footer>
+    <script src="htmlq.js"></script>
+</body>
+</html>
